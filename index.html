@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Hulk">
+  <meta name="keywords" content="Hulk">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hulk</title>
+
+  <style>
+  .hr {width: 100%; height: 1px; margin: 48px 0; background-color: #d6dbdf;}
+
+    .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video {
+        margin: 5px;
+    }
+
+    .big-video {
+        width: 640px;
+        height: 360px;
+    }
+
+    .small-video {
+        width: 320px;
+        height: 180px;
+    }
+
+  </style>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- custom css file  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/twentytwenty.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="icon" href="./assets/pac_man.svg">
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop head">
+      <div class="columns is-centered">
+        <div class="column has-text-centered head">
+<!--          <div class="logo">-->
+<!--          <a href="index.html">-->
+<!--            &lt;!&ndash; <img src="./assets/images/propainter_logo1" width=200px alt="Logo"> &ndash;&gt;-->
+<!--            <img src="./assets/images/propainter_logo1" onmouseover="this.src='./assets/images/propainter_logo2';" onmouseout="this.src='./assets/images/propainter_logo1';">-->
+<!--          </a>-->
+<!--          </div>-->
+          <br>
+
+          <h1 class="title is-2 publication-title">
+           Hulk: A Universal Knowledge Translator for Human-Centric Tasks
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="" target="_blank">Yizhou Wang</a><sup>*,1</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="" target="_blank">Yixuan Wu</a><sup>*,2</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="" target="_blank">Shixiang Tang</a><sup>✉,4</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="" target="_blank">Weizhen He</a><sup>2</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="" target="_blank">Xun Guo</a><sup>3</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="" target="_blank">Feng Zhu</a><sup>5</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="" target="_blank">Lei Bai</a><sup>1</sup>,&nbsp;
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="" target="_blank">Rui Zhao</a><sup>5</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="" target="_blank">Jian Wu</a><sup>2</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="" target="_blank">Tong He</a><sup>1</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="" target="_blank">Wanli Ouyang</a><sup>1</sup>.&nbsp;
+<!--             </span>
+            <span class="author-block">
+              <a href="https://yanglei.me/" target="_blank">Lei Yang</a><sup>✉,2,3</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a><sup>✉,1</sup>,&nbsp;
+            </span> -->
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Shanghai AI Laboratory</span>,
+            <span class="author-block"><sup>2</sup>Zhejiang University</span>,
+            <br>
+            <span class="author-block"><sup>3</sup>University of Science and Technology of China</span>,
+            <span class="author-block"><sup>4</sup>University of Sydney</span>,
+            <span class="author-block"><sup>5</sup>SenseTime Group</span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>equal contributions</span>,
+            <span class="author-block"><sup>✉</sup>corresponding author</span>
+          </div>
+
+          <br>
+<!--           <div class="is-size-4 publication-authors">
+            <span class="author-block">NeurIPS 2023 (Dataset and Benchmark Track)</span>
+          </div> -->
+
+          <br>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2312.01697.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- PDF Link. -->
+<!--               <span class="link-block">
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper(Coming Soon)</span>
+                </a>
+              </span> -->
+
+              <!-- Video Link. -->
+<!--               <span class="link-block">
+                <a href="https://youtu.be/DepTqbPpVzY" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <!-- Demo Link. -->
+              <span class="link-block">
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span>🤗&nbsp;Model</span>
+                </a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Abstract. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Human-centric perception tasks, e.g., pedestrian detection, skeleton-based action recognition, and pose estimation, have wide industrial applications, such as metaverse and sports analysis. There is a recent surge to develop human-centric foundation models that can benefit a broad range of human-centric perception tasks. While many human-centric foundation models have achieved success, they did not explore 3D and vision-language tasks for human-centric and required task-specific finetuning. These limitations restrict their application to more downstream tasks and situations. To tackle these problems, we present Hulk, the first multimodal human-centric generalist model, capable of addressing 2D vision, 3D vision, skeleton-based, and vision-language tasks without task-specific finetuning. The key to achieving this is condensing various task-specific heads into two general heads, one for discrete representations, e.g., languages, and the other for continuous representations, e.g., location coordinates. 
+The outputs of two heads can be further stacked into four distinct input and output modalities. This uniform representation enables Hulk to treat diverse human-centric tasks as modality translation, integrating knowledge across a wide range of tasks. Comprehensive evaluations of Hulk on 12 benchmarks covering 8 human-centric tasks demonstrate the superiority of our proposed method, achieving state-of-the-art performance in 11 benchmarks. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <!-- Video -->
+<!-- <section class="section"> -->
+  <!-- <div class="container is-max-desktop"> -->
+    <!-- <div class="columns is-centered has-text-centered"> -->
+        <!-- <div class="column"> -->
+          <!-- <h2 class="title is-3">Video</h2> -->
+          <!-- <div class="publication-video"> -->
+            <!-- <iframe src="https://www.youtube.com/embed/DepTqbPpVzY?si=qSeQuX-bgm_rON7E" -->
+                    <!-- frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section>  -->
+
+<!-- Visualizations -->
+
+
+
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Qualitative Results</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">Human Parsing</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/video/raw3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/video/par3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+                <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">Detection</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/video/raw3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/video/det3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+                <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">2D Pose</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/video/raw3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/video/2dpose3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+    <!-- </div> -->
+
+
+                <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">Detection</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/video/raw3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/video/det3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+</div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3"></h2>
+        </div>
+      </div>
+
+<!--       <div class="columns is-centered">
+        <div class="column is-5">
+        <div class="desc">3D Pose</div>
+          <video muted autoplay loop width="85%">
+            <source src="./assets/video/3dpose3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="column is-5">
+          <div class="desc">Mesh recovery</div>
+          <video muted autoplay loop width="85%">
+            <source src="./assets/video/mesh3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div> -->
+
+
+
+
+<div class="columns is-centered">
+  <div class="column is-5" style="position: relative;">
+    <video muted autoplay loop width="85%" style="display: block;">
+      <source src="./assets/video/3dpose3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="desc" style="position: absolute; bottom: -5px; right: 117px; transform: translate(calc(100% - 50px), calc(100% - 50px)); background-color: rgba(0, 0, 0, 0.2); padding: 5px;">3D Pose</div>
+  </div>
+
+  <div class="column is-5" style="position: relative;">
+    <video muted autoplay loop width="85%" style="display: block;">
+      <source src="./assets/video/mesh3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="desc" style="position: absolute; bottom: -3px; right: 169px; transform: translate(calc(100% - 50px), calc(100% - 50px)); background-color: rgba(0, 0, 0, 0.2); padding: 5px;">Mesh Recovery</div>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+            <h2 class="title is-3">Performances</h2>
+        </div>
+      </div>
+
+        <div class="column is-centered has-text-centered">
+          <img style="width: 100%;" src="./assets/teaser1130.png">
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{wang2023hulk,
+  title={Hulk: A Universal Knowledge Translator for Human-Centric Tasks},
+  author={Wang, Yizhou and Wu, Yixuan and Tang, Shixiang and He, Weizhen and Guo, Xun and Zhu, Feng and Bai, Lei and Zhao, Rui and Wu, Jian and He, Tong and others},
+  journal={arXiv preprint arXiv:2312.01697},
+  year={2023}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <div class="columns is-centered"><p>
+            This website template is borrowed from <a href="https://caizhongang.com/projects/SMPLer-X/" target="_blank">SMPLer-X</a>.
+          </p></div>
+        </div>
+      </div>
+    </div>
+
+<!--    =================Visitor==========================-->
+<!--    <div class="content has-text-centered" style="padding:0 0 0 0">-->
+<!--      <img src='https://api.infinitescript.com/badgen/count?name=sczhou/ProPainter&ltext=Visitors&color=3977dd' alt='visitors'>-->
+<!--    </div>-->
+
+  </div>
+</footer>
+
+  <!-- custom js file  -->
+  <script defer src="./assets/js/fontawesome.all.min.js"></script>
+  <script src="./assets/js/bulma-carousel.min.js"></script>
+  <script src="./assets/js/bulma-slider.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/jquery.event.move.js"></script>
+  <script src="./assets/js/jquery.twentytwenty.js"></script>
+  <script>
+  $(function(){
+    $(".twentytwenty-container").twentytwenty();
+    // $(".twentytwenty-container", "#results-carousel").twentytwenty({default_offset_pct: 0.5, ratio: 0.5});
+  });
+  </script>
+</body>
+</html>
